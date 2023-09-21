@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from "./components/Home"
 
 function App() {
   const [device, setDevice] = useState("mobile")
@@ -50,10 +52,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout windowSize={windowSize} location={location} />}>
-          {/* <Route index element={<Home />}/> */}
-          {/* <Route path="destination" element={<Destination />} />
-          <Route path="crew" element={<Crew />} />
-          <Route path="technology" element={<Technology /> } /> */}
+          <Route index element={<Home />}/>
         </Route>
       </Routes >     
     </div>
