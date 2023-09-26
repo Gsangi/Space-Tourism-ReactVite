@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from "./components/Home"
+import Destination from './components/Destination';
+import Technology from './components/Technology';
 
 function App() {
   const [device, setDevice] = useState("mobile")
@@ -53,6 +55,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout windowSize={windowSize} location={location} />}>
           <Route index element={<Home />}/>
+          <Route path='/Destination' element = {<Destination />} />
+          <Route path='/Technology' element = {<Technology />} />
         </Route>
       </Routes >     
     </div>

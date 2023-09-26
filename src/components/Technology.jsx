@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import vehicleLandscape from "./images/technology/image-launch-vehicle-landscape.jpg";
-import vehiclePortrait from "./images/technology/image-launch-vehicle-portrait.jpg";
-import capsuleLandscape from "./images/technology/image-space-capsule-landscape.jpg";
-import capsulePortrait from "./images/technology/image-space-capsule-portrait.jpg";
-import spaceportLandscape from "./images/technology/image-spaceport-landscape.jpg";
-import spaceportPortrait from "./images/technology/image-spaceport-portrait.jpg";
+import vehicleLandscape from "../../images/technology/image-launch-vehicle-landscape.jpg";
+import vehiclePortrait from "../../images/technology/image-launch-vehicle-portrait.jpg";
+import capsuleLandscape from "../../images/technology/image-space-capsule-landscape.jpg";
+import capsulePortrait from "../../images/technology/image-space-capsule-portrait.jpg";
+import spaceportLandscape from "../../images/technology/image-spaceport-landscape.jpg";
+import spaceportPortrait from "../../images/technology/image-spaceport-portrait.jpg";
 
 const Technology = () => {
   const [checkedLabel, setCheckedLabel] = useState('radio1')
