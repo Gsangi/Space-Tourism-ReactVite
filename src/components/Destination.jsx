@@ -8,7 +8,7 @@ const Destination = () => {
   const [checkedLabel, setCheckedLabel] = useState('radio1')
 
 
-  const navigatiom = (
+  const navigation = (
     <div className="destination-manual">
       <label htmlFor="radio1" className="manual-btn radio1"
         onClick={() => setCheckedLabel('radio1')}
@@ -61,7 +61,7 @@ const Destination = () => {
           <img src={moon} alt="moon" />
 
           <div className="destination-slide__info">
-          {navigatiom}
+          {navigation}
           <h1>MOON</h1>
           <p>See our planet as you’ve never seen it before.
             A perfect relaxing trip away to help regain perspective
@@ -89,7 +89,7 @@ const Destination = () => {
           <img src={mars} alt="mars" />
 
           <div className="destination-slide__info">
-          {navigatiom}
+          {navigation}
           <h1>MARS</h1>
           <p>Don’t forget to pack your hiking boots. You’ll need them
             to tackle Olympus Mons, the tallest planetary mountain in
@@ -113,7 +113,7 @@ const Destination = () => {
           <img src={europa} alt="europa" />
 
           <div className="destination-slide__info">
-          {navigatiom}
+          {navigation}
           <h1>EUROPA</h1>
           <p>The smallest of the four Galilean moons orbiting Jupiter,
             Europa is a winter lover’s dream. With an icy surface, it’s
@@ -138,7 +138,7 @@ const Destination = () => {
           <img src={titan} alt="titan" />
 
           <div className="destination-slide__info">
-          {navigatiom}
+          {navigation}
           <h1>TITAN</h1>
           <p>The only moon known to have a dense atmosphere other than Earth,
             Titan is a home away from home (just a few hundred degrees colder!).

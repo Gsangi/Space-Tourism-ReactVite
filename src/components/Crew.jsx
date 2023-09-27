@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import anousheh from "./images/crew/image-anousheh-ansari.png";
-import douglas from "./images/crew/image-douglas-hurley.png";
-import mark from "./images/crew/image-mark-shuttleworth.png";
-import victor from "./images/crew/image-victor-glover.png";
+import anousheh from "../../images/crew/image-anousheh-ansari.png";
+import douglas from "../../images/crew/image-douglas-hurley.png";
+import mark from "../../images/crew/image-mark-shuttleworth.png";
+import victor from "../../images/crew/image-victor-glover.png";
 
 const Crew = () => {
   const [checkedLabel, setCheckedLabel] = useState('radio1')

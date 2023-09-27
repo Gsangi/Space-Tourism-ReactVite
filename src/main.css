@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Main Format */
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.App {
+  padding: 1.5em 1.5em 3em 1.5em;
+  margin: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Component Format */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer svg {
+  transform: scale(0.83333333333);
+}
+
+.home {
+  text-align: center;
+}
+
+.hamburger:hover g,
+.close:hover g {
+  fill: #979797;
+  cursor: pointer;
+}
+
+.home button {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25em;
+  height: 7.5em;
+  width: 7.5em;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 2.4em;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  outline: solid 0px rgb(151, 151, 151, 0.3);
+  transition: outline 0.5s linear;
+}
+.home button:hover {
+  outline-width: 2em;
+  cursor: pointer;
+}
+
+#myLinks {
+  position: fixed;
+  inset: 0 0 0 30%;
+  transition: 0.3s linear;
+  transition-delay: 250ms;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  padding: 0 1.65625em 0 2em;
+}
+
+.close {
+  position: absolute;
+  top: 2.125em;
+  right: 1.65625em;
+}
+
+ul {
+  padding: 0;
+  margin-top: 7.375em;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.destination-slide,
+.crew-slide,
+.technology-slide {
+  width: 20%;
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.crew-slide:first-of-type {
+  padding-bottom: 3.125em;
+}
+.destination-slide img,
+.crew-slide img {
+  margin: 0 auto;
+}
+.destination-slide img {
+  height: 10.625em;
+}
+.crew-slide img {
+  height: 13.9375em;
+}
+
+.technology-slide img {
+  width: calc(100% + 1.5em + 1.5em);
+  transform: translateX(-1.5em);
+  height: 100%;
+}
+.destination-manual {
+  margin: 5.406% auto 4.159% auto;
+}
+
+.crew-manual,
+.technology-manual,
+.destination-manual {
+  display: flex;
+  justify-content: center;
+}
+
+.crew-manual > .manual-btn,
+.technology-manual > .manual-btn {
+  padding: 3px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+.crew-manual > .manual-btn {
+  margin: 2.286em 0;
+  opacity: 0.17;
+}
+.crew-manual > .manual-btn:hover {
+  opacity: 0.5;
+}
+
+.technology-manual > .manual-btn {
+  height: 2.857em;
+  width: 2.857em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair";
+  font-weight: 400;
+  margin: 2.43em 0 1.857em 0;
+  border: 1px solid #979797;
+}
+
+.technology-manual > .manual-btn:hover {
+  border: 1px solid #ffffff;
+}
+
+.manual-btn {
+  padding-bottom: 0.5em;
+  cursor: pointer;
+  transition: 1s;
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #d0d6f9;
+  letter-spacing: 2.3625px;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 1.625em;
+}
+
+.technology-manual > .manual-btn:not(:last-child) {
+  margin-right: 1.14em;
+}
+
+.manual-btn:hover {
+  border-bottom: 3px solid white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+.destination hr {
+  height: 1px;
+  width: 100%;
+  border: 1px solid #383b4b;
+  margin: 9.79% 0;
+}
+.crew hr {
+  height: 1px;
+  width: 100%;
+  border: 1px solid #383b4b;
+  margin: 0;
+  margin-top: -4px;
+}
+
+picture {
+  height: 10.625em;
+}
+
+.technology-slide__text {
+  padding-bottom: 2.063em;
+}
+/* Text Format */
+
+.home h2,
+.home p,
+.home h1,
+li,
+.destination h2,
+.crew h2,
+.crew h3,
+.destination-slide h1,
+.destination-slide h2,
+.destination-slide p,
+.crew h1,
+.technology h1,
+.crew p,
+.technology h2,
+.technology p,
+.technology h3 {
+  font-weight: 400;
+}
+
+.destination span,
+.crew span,
+a > span,
+.technology span {
+  font-weight: 700;
+}
+.home h2,
+li,
+a > span,
+.destination h2,
+.crew h2,
+.technology h2 {
+  font-size: 1em;
+}
+.home h2,
+li,
+a > span,
+.destination h2,
+.destination-slide h2,
+.crew h2,
+.technology h3,
+.technology h2 {
+  font-family: "Barlow Condensed";
+}
+
+.destination-slide h1,
+.home h1,
+a,
+.destination h2,
+.destination-slide h1,
+.destination-slide h2,
+.crew h1,
+.technology h1,
+.crew h2,
+.technology h2,
+.destination-slide__stats p,
+#stats {
+  color: white;
+}
+
+.home h2,
+.home p,
+.destination-slide p,
+.crew p,
+.technology p,
+.technology h3,
+.destination-slide__stats h2 {
+  color: #d0d6f9;
+}
+
+.destination-slide p,
+.home p,
+.crew p,
+.technology p {
+  font-family: "Barlow";
+}
+
+.destination-slide h1,
+#stats,
+.home h1,
+.crew h3,
+.crew h1,
+.technology h1 {
+  font-family: "Bellefair";
+}
+
+a,
+.destination h2,
+.crew h2,
+.technology h2 {
+  letter-spacing: 2.7px;
+}
+
+.home h2 {
+  margin-top: 3em;
+}
+
+.home h1 {
+  font-size: 5em;
+  margin: 0.2em 0 0.25em 0;
+}
+
+.home p {
+  line-height: 1.5625em;
+}
+
+.home p,
+.destination-slide p,
+.crew p,
+.technology p {
+  font-size: 0.9375em;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+li:hover,
+.destination-slide__info > .destination-manual > label:hover {
+  border-bottom: 0.2rem solid #979797;
+  transition: none;
+}
+
+.topnav--mobile li:hover {
+  border-bottom: none;
+}
+
+.active {
+  border-bottom: 0.2rem solid white;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+a > span {
+  margin-left: 0.875em;
+}
+
+.destination span,
+.crew span,
+.crew h3,
+.technology span {
+  color: #979797;
+}
+.destination span,
+.crew span,
+.technology span {
+  margin-right: 1.125em;
+}
+
+.destination h2,
+.crew h2,
+.technology h2 {
+  margin-bottom: 9.79%;
+}
+.destination h2,
+.crew h2,
+.technology h2 {
+  text-align: center;
+}
+
+.destination-slide h1 {
+  font-size: 3.5em;
+  margin: 0;
+}
+
+.destination-slide p,
+.technology p,
+.crew p {
+  line-height: 25px;
+}
+.destination-slide h2 {
+  margin: 0;
+}
+.destination-slide h2,
+.technology h3 {
+  font-size: 0.875em;
+}
+
+.destination-slide h2:nth-of-type(2) {
+  margin-top: 9.79%;
+}
+
+#stats {
+  font-size: 1.75em;
+  margin-top: 3.671%;
+}
+
+.crew h3 {
+  font-size: 1.125em;
+}
+
+.crew p,
+.technology p,
+.crew h3,
+.technology h3 {
+  margin: 0;
+}
+
+.crew h1,
+.technology h1 {
+  font-size: 1.5em;
+  margin: 0.333333em 0 0.6666666em 0;
+}
+.technology h3 {
+  letter-spacing: 2.3625px;
+}

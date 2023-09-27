@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import Home from "./components/Home"
 import Destination from './components/Destination';
 import Technology from './components/Technology';
+import Crew from './components/Crew';
 
 function App() {
   const [device, setDevice] = useState("mobile")
@@ -57,6 +58,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route path='/Destination' element = {<Destination />} />
           <Route path='/Technology' element = {<Technology />} />
+          <Route path='/Crew' element = {<Crew />} />
         </Route>
       </Routes >     
     </div>
