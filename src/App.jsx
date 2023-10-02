@@ -56,9 +56,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout windowSize={windowSize} location={location} />}>
           <Route index element={<Home />}/>
-          <Route path='/Destination' element = {<Destination />} />
-          <Route path='/Technology' element = {<Technology />} />
-          <Route path='/Crew' element = {<Crew />} />
+          <Route path="destination" element={<Destination />} />
+          <Route path="crew" element={<Crew />} />
+          <Route path="technology" element={<Technology /> } />
         </Route>
       </Routes >     
     </div>
@@ -66,3 +66,4 @@ function App() {
 }
 
 export default App;
+

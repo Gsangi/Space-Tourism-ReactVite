@@ -1,9 +1,13 @@
 import { Outlet } from "react-router-dom"
+// import NavBar from "./NavBar"
 import React from 'react'
 
-const Layout = () => {
+const Layout = ({ windowSize, location }) => {
   return (
-    <Outlet />
+    <main>
+      {/* <NavBar windowSize={windowSize} location={location} /> */}
+      <Outlet />
+    </main >
   )
 }
 

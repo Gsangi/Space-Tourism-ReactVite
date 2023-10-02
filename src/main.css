@@ -441,3 +441,231 @@ a > span {
 .technology h3 {
   letter-spacing: 2.3625px;
 }
+
+
+@media screen and (min-width: 630px) {
+    .App {
+      padding: 1.5em 1.5em 0 2.4375em;
+    }
+    #myLinks {
+      display: contents;
+      background-color: aliceblue;
+    }
+  
+    ul {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.3125em;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 0 3em;
+    }
+  
+    li {
+      margin: 0;
+      padding: 2.4em 0;
+    }
+  
+    a > span {
+      display: none;
+    }
+  
+    a {
+      font-size: 0.875em;
+      letter-spacing: 2.3625px;
+    }
+  
+    .logoContainer svg {
+      transform: scale(1);
+    }
+  
+    .home h2 {
+      font-size: 1.25em;
+      margin-top: 6.5em;
+    }
+  
+    .home h1 {
+      font-size: 9.375em;
+      margin: 0.16em 0 0 0;
+    }
+    .home p,
+    .crew p {
+      font-size: 1em;
+    }
+    .home p {
+      line-height: 1.75em;
+      width: 61.8125%;
+      margin: auto;
+    }
+  
+    .home button {
+      width: 7.5625em;
+      height: 7.5625em;
+      font-size: 2em;
+      bottom: 2.8125em;
+    }
+  
+    .destination h2,
+    .crew h2,
+    .technology h2 {
+      text-align: justify;
+      margin: 3.2em 0 3em 0;
+      font-size: 1.25em;
+      letter-spacing: 3.375px;
+    }
+    .destination h2 {
+      margin: 3.2em 0 3em 0;
+    }
+  
+    .crew h2 {
+      margin: 3.2em 0 1.3125em 0;
+    }
+  
+    .destination-slide img {
+      height: 18.75em;
+    }
+  
+    .destination-manual {
+      margin: 9.351% auto 5.645% auto;
+    }
+  
+    .manual-btn:not(:last-child) {
+      margin-right: 2.5em;
+    }
+  
+    .manual-btn,
+    .destination-slide p,
+    .technology h3,
+    .technology h1 {
+      font-size: 1em;
+    }
+  
+    .manual-btn {
+      padding-bottom: 0.75em;
+    }
+    .manual-btn,
+    .technology h3 {
+      letter-spacing: 2.7px;
+    }
+  
+    .destination-slide h1 {
+      font-size: 5em;
+    }
+  
+    .destination-slide p {
+      width: 81.277%;
+      margin: auto;
+    }
+  
+    .destination hr {
+      margin: 6.951% auto 3.972% auto;
+      width: 81.279%;
+    }
+  
+    .destination-slide__stats {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 3.875em;
+    }
+  
+    .destination-slide__stats h2 {
+      margin: 0 0 1em 0;
+      font-size: 0.75em;
+      letter-spacing: 2.3625px;
+      text-align: center;
+    }
+  
+    .destination-slide__stats > div {
+      width: 30.638%;
+    }
+    #stats {
+      margin: auto;
+      text-align: center;
+    }
+  
+    .crew-slide,
+    .crew-slide__image {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .crew-slide:first-of-type {
+      padding-bottom: 0;
+    }
+  
+    .crew-info {
+      display: flex;
+      flex-flow: column;
+    }
+    .crew-manual {
+      order: 3;
+    }
+  
+    .crew-slide hr {
+      display: none;
+    }
+  
+    .crew-manual > .manual-btn {
+      margin: 2.624em 0;
+    }
+    .manual-btn:not(:last-child) {
+      margin-right: 1em;
+    }
+  
+    .crew-slide__image--1 img {
+      height: 35.75em;
+    }
+    .crew-slide__image--2 img,
+    .crew-slide__image--4 img,
+    .crew-slide__image--3 img {
+      height: 33.25em;
+    }
+  
+    .crew h3 {
+      font-size: 1.5em;
+    }
+  
+    .crew h1 {
+      font-size: 2.5em;
+      margin: 0.2em 0 0.4em 0;
+    }
+    .crew p {
+      width: 64.965%;
+      margin: auto;
+    }
+    .technology-slide img {
+      width: calc(100% + 1.5em + 2.8em);
+      transform: translateX(-2.5em);
+    }
+  
+    .technology-manual > .manual-btn {
+      height: 3.75em;
+      width: 3.75em;
+      margin: 3.5em 0 2.75em 0;
+    }
+  
+    .technology-manual > .manual-btn:not(:last-child) {
+      margin-right: 1em;
+    }
+  
+    .technology h1 {
+      margin: 0.4em 0 0.4em 0;
+      font-size: 2.5em;
+    }
+  
+    .technology p {
+      margin: auto;
+      width: 58%;
+      line-height: 28px;
+      margin-bottom: 4.0639em;
+    }
+  
+    picture {
+      height: 19.375em;
+    }
+  }
+  
